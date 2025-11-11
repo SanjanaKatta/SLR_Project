@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Linear Regression</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4A90E2, #145DA0);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 350px;
+        }
+        input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 25px;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 30px;
+            border: none;
+            background-color: #FFB347;
+            color: #000;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #FFD580;
+            transform: scale(1.05);
+        }
+        footer {
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            font-size: 14px;
+            color: #fff;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple Linear Regression</h1>
+    <h2>Predicting Son's Height Based on Father's Height</h2>
+
+    <div class="container">
+        <form action="/predict" method="POST">
+            <label for="father_height"><b>Enter Father's Height (in cm):</b></label><br>
+            <input type="number" name="father_height" id="father_height" step="any" required><br>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+    <footer>Project done by <b>SANJANA KATTA</b></footer>
+
+</body>
+</html>
